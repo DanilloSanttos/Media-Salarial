@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Média Salarial</title>
+    <link rel="stylesheet" href="style.css\style.css" />
+    <link rel="shortcut icon" href="img/wdd_2023.png" type="image/png"/>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/wdd_2023.png" alt="Logo">
+    </header>
+
+   
+</div>
+
+
+    <div class="container">
+        <a href="https://ge.globo.com/futebol/times/sao-paulo/">
+            <button class="BtnNoticias">Notícias</button>
+        </a>
+
+        <div>
+            <h1>Calculadora de Média Salarial</h1>
+        </div>
+        
+        <label for="funcionarios">Digite os nomes e salários dos jogadores, um por linha:
+        Conforme exemplo abaixo</label>
+        <textarea id="funcionarios" placeholder="João:1000\nMaria:1200\nPedro:1500\n..." rows="4" cols="50"></textarea>
+
+        
+        <button id="btnCalcular" onclick="calcularEExibirResultados()">Calcular</button>
+        <button id="btnCadastro" onclick="exibirCadastro()">Cadastrar Funcionário</button>
+
+        <div id="cadastroFuncionario" style="display: none;">
+            <h2>Cadastro de Funcionário</h2>
+            <label for="nomeCadastro">Nome:</label>
+            <input type="text" id="nomeCadastro" placeholder="Digite o nome do funcionário" />
+            <label for="salarioCadastro">Salário:</label>
+            <input type="text" id="salarioCadastro" placeholder="Digite o salário do funcionário" />
+            <button onclick="cadastrarFuncionario()">Cadastrar</button>
+        </div>
+
+        <p id="resultado"></p>
+
+        <label class="label">
+            <input class="input" type="checkbox" />
+            <span class="circle"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                class="icon"
+              >
+                <path
+                  d="M12 19V5m0 14-4-4m4 4 4-4"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                  stroke="currentColor"
+                ></path>
+              </svg>
+              <div class="square"></div>
+            </span>
+            <p class="title">Download</p>
+            <p class="title" onclick="salvarResultados()">Open</p>
+          </label>
+    </div>
+
+    <footer>
+        <audio src="audio/audio.mpeg" autoplay controls loop></audio>
+    </footer>
+
+    <script src="script.js\script.js"></script>
+</body>
+
+<footer class="footer">
+    <address>
+        Criação e Desenvolvimento: <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">Danilo Santos</a> &copy; 2023 - <a>WDD Estúdio</a>
+    </address>
+</footer>
+
+</html>
