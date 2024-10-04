@@ -34,14 +34,21 @@
         <button id="btnCalcular" onclick="calcularEExibirResultados()">Calcular</button>
         <button id="btnCadastro" onclick="exibirCadastro()">Cadastrar Funcionário</button>
 
+
+       
+        
         <div id="cadastroFuncionario" style="display: none;">
             <h2>Cadastro de Funcionário</h2>
-            <label for="nomeCadastro">Nome:</label>
-            <input type="text" id="nomeCadastro" placeholder="Digite o nome do funcionário" />
-            <label for="salarioCadastro">Salário:</label>
-            <input type="text" id="salarioCadastro" placeholder="Digite o salário do funcionário" />
-            <button onclick="cadastrarFuncionario()">Cadastrar</button>
+            <form method="post" action="https://api.sheetmonkey.io/form/tcQjpzcSETK77mKyRPu1WX">
+            
+            <label for="nomeCadastro">Nome<input type="text" name="Nome" 
+                required placeholder="Digite o nome do funcionário" />
+            <label for="nomeCadastro">Salario<input type="text" name="Salario" 
+                required placeholder="Digite o salário do funcionário" />
+                
+            <button id="btnCadastrar" onclick="cadastrarFuncionario()">Cadastrar</button>
         </div>
+    </form>
 
         <p id="resultado"></p>
 
